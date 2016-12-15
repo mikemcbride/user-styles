@@ -11,6 +11,7 @@ body {
 #content {
   padding-top: 60px;
   position: relative;
+  border-top: 0;
 }
 
 #content:before {
@@ -25,23 +26,36 @@ body {
   letter-spacing: 0.15em;
 }
 
+@media screen and (max-width: 768px) {
+  #content:before {
+    padding: 0 16px;
+  }
+}
+
 #all {
-  width: 34rem;
+  width: 100%;
+  max-width: 34rem;
 }
 
 #header,
 #footer,
+#header-mobile-container,
+#footer-mobile,
 #col-lft,
 #col-rgt,
 .fundraiser-banner,
 .fundraiser-notice,
 [id^="google_ads_iframe"],
 #google_image_div,
-.report-entry + div[align="center"],
+div[align="center"],
 .social-share,
 #disclaimer,
 .related-contents-heading,
-.related-contents { display: none !important; }
+.related-contents,
+.twitter-bg,
+.font-resizer { display: none !important; }
+
+#col-ctr { padding-top: 0; }
 
 #col-ctr,
 #col-ctr p {
@@ -70,7 +84,8 @@ body {
   padding-top: 2rem;
 }
 
-#browse-reps .continue {
+#browse-reps .continue,
+#browse-reps-mobile .continue {
   text-transform: uppercase;
   letter-spacing: 0.15em;
   color: rgb(70, 29, 124);
