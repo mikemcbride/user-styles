@@ -1,0 +1,17 @@
+/* applies to jenkins.wwt.com */
+
+.console-output,
+#spinner {
+    background-color: #212836;
+    color: #90a1c0;
+    padding: 5px;
+}
+
+.console-output a {
+    color: #ff2e88;
+}
+
+.console-output pre { font-family: Hack, Menlo, Monaco, monospace; }
+
+.console-output .gradle-outcome-success { color: #6af699; }
+.console-output .gradle-task-progress-status { color: #fffa9e; }

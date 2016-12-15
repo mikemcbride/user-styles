@@ -1,0 +1,181 @@
+/* taken from @mdo */
+
+/* 
+ * Simple Daring Fireball userstyle
+ * Invert the color scheme and increase the font-size for readibility.
+ *
+ * Created and maintained by @mdo * https://github.com/mdo/mdo-df-css
+ */
+/* Helvetica Neue it! */
+
+* {
+    font-family: -apple-system, BlinkMacSystemFont, Helvetica, sans-serif, "Apple Color Emoji" !important;
+}
+/* Background change and font-size bump */
+
+body {
+    background: #fff !important;
+    padding: 40px !important;
+    color: #333 !important;
+    font-size: 16px !important;
+    line-height: 1.75 !important;
+    min-width: 0;
+}
+/* Links to blue! */
+
+a {
+    color: #4078c0 !important;
+    font-weight: 500;
+    border-color: rgba(0, 0, 0, .2) !important;
+}
+a:hover {
+    background-color: #eee !important;
+}
+/* Clean up the text colors and headings */
+
+h1,
+h2,
+h3,
+h4,
+.linkedlist,
+.linkedlist p,
+.article p,
+.article li {
+    color: #333 !important;
+}
+.linkedlist blockquote,
+.article blockquote {
+    border-left-color: #ccc;
+    border-left-width: 2px;
+    margin-right: 0 !important;
+}
+.linkedlist blockquote p,
+.article blockquote p {
+    color: #777 !important;
+}
+/* Code Snippets */
+
+code,
+pre {
+    font-family: "Monaco", monospace !important;
+    color: #555 !important;
+}
+pre {
+    background: #eee;
+    border-color: #ccc;
+    padding: 10px;
+}
+/* Remove top margin from all img elements */
+
+img {
+    margin-top: 0;
+}
+/* Heading spacing */
+
+dl.linkedlist dt {
+    text-transform: none !important;
+    letter-spacing: 0 !important;
+}
+/* Remove left margin on dd */
+
+dl.linkedlist dd {
+    margin-left: 0;
+}
+dl.linkedlist dd ul li {
+    color: #333 !important;
+}
+/* Site Container */
+
+div#Box {
+    width: auto !important;
+    max-width: 600px !important;
+}
+/* Masthead */
+
+div#Banner {
+    margin: 0 !important;
+}
+/* Modify the logo */
+
+div#Banner a {
+    display: block;
+    width: 240px;
+    height: 56px;
+    margin-left: -14px;
+    background: url("http://daringfireball.net/graphics/logos-alt/df_double_reverse.png") no-repeat 0 0;
+    background-size: 240px 56px;
+}
+div#Banner a:hover {
+    background-color: transparent !important;
+    opacity: .8;
+}
+div#Banner a img {
+    display: none;
+}
+/* Hide shirts promo */
+
+div#BannerPromo {
+    display: none;
+}
+/* Nix the sidebar and widen the main column */
+
+div#Sidebar {
+    display: none;
+}
+/* Hide everything in the sidebar but the ads */
+
+div#Sidebar > p,
+div#Sidebar > ul {
+    display: none;
+}
+div#SidebarTheDeck * {
+    border: 0 !important;
+    padding: 0;
+}
+/* Move the ads, because ads are revenue and revenue is nice */
+
+div#SidebarTheDeck {
+    position: fixed;
+    bottom: 15px;
+    left: 20px;
+    width: 120px;
+    margin: 0 !important;
+    line-height: 1 !important;
+}
+div#SidebarTheDeck a {
+    border: 0;
+}
+div#SidebarTheDeck img.ad {
+    display: block !important;
+    margin: 0 0 5px !important;
+}
+div#SidebarTheDeck p {
+    display: block;
+    width: auto !important;
+    margin: 0 !important;
+    color: #333 !important;
+    text-align: left;
+}
+div#SidebarTheDeck img.the_deck_promo {
+    margin-top: 0;
+}
+div#SidebarTheDeck p#ViaTheDeck img {
+    display: none;
+}
+/* Reposition the main column */
+
+div#Main {
+    margin: 50px 0 0 !important;
+    width: auto !important;
+}
+/* Clean up tabs on project pages (e.g., Markdown) */
+
+ul#ProjectSubmenu li a {
+    border-color: #ccc !important;
+}
+ul#ProjectSubmenu li a.selected,
+ul#ProjectSubmenu li a.selected:hover {
+    background: #606870 !important;
+    border-color: #606870 !important;
+    color: #fff !important;
+}

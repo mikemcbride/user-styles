@@ -1,0 +1,78 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica, sans-serif, "Apple Color Emoji";
+}
+
+#content {
+  padding-top: 60px;
+  position: relative;
+}
+
+#content:before {
+  position: absolute;
+  content: "Dandy Don's LSU Sporting News";
+  color: rgb(70, 29, 124);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.25;
+  top: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+#all {
+  width: 34rem;
+}
+
+#header,
+#footer,
+#col-lft,
+#col-rgt,
+.fundraiser-banner,
+.fundraiser-notice,
+[id^="google_ads_iframe"],
+#google_image_div,
+.report-entry + div[align="center"],
+.social-share,
+#disclaimer,
+.related-contents-heading,
+.related-contents { display: none !important; }
+
+#col-ctr,
+#col-ctr p {
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica, sans-serif, "Apple Color Emoji";
+  line-height: 1.6;
+  font-size: inherit;
+  text-align: left;
+  font-weight: 300;
+  color: #333;
+}
+
+.one-item h3 {
+  font-weight: bolder;
+  padding-bottom: 0;
+  color: #999;
+}
+
+.one-item span.sdate { 
+  font-size: 1.25rem;
+  color: rgb(70, 29, 124);
+}
+
+.desktop ~ .desktop {
+  border-top: 1px solid rgba(0,0,0,0.25);
+  padding-top: 2rem;
+}
+
+#browse-reps .continue {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: rgb(70, 29, 124);
+  font-size: .875rem;
+}
