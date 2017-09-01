@@ -1,10 +1,81 @@
-/* applies to jenkins.wwt.com */
+.build-caption.page-headline {
+    background-color: #212836;
+    color: #90a1c0;
+    margin: 0;
+    padding: 1em .2em;
+}
+
+.build-caption.page-headline table,
+.build-caption.page-headline form,
+.build-caption.page-headline td,
+.build-caption.page-headline th,
+.build-caption.page-headline p {
+    color: #90a1c0;
+}
+
+.stop-button-link {
+    text-decoration: none !important;
+}
+
+.stop-button-link img { display: none; }
+.stop-button-link:after {
+    padding: 1px 4px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    border-radius: 50%;
+    content: '✕';
+    color: #fff !important;
+    background-color: #e76572 !important;
+    font-weight: bold !important;
+    font-size: 10px;
+}
+
+.build-caption.page-headline table.progress-bar {
+    border: 1px solid #6af699;
+}
+
+.build-caption.page-headline td.progress-bar-left {
+    background-color: #212836;
+}
+
+.build-caption.page-headline td.progress-bar-done {
+    background-color: #6af699;
+}
+
 
 .console-output,
 #spinner {
     background-color: #212836;
     color: #90a1c0;
     padding: 5px;
+}
+
+#spinner {
+    position: relative;
+    min-height: 15px;
+}
+
+#spinner:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 5px;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgba(144,161,192,0.5);
+    border-top-color: rgba(144,161,192,1);
+    animation-name: rotation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#spinner img {
+    display: none;
 }
 
 .console-output a {
@@ -15,3 +86,18 @@
 
 .console-output .gradle-outcome-success { color: #6af699; }
 .console-output .gradle-task-progress-status { color: #fffa9e; }
+
+
+/* rotation keyframe for spinner animations */
+@-webkit-keyframes rotation {
+  to { transform: rotate(360deg) }
+}
+@-moz-keyframes rotation {
+  to { transform: rotate(360deg) }
+}
+@-o-keyframes rotation {
+  to { transform: rotate(360deg) }
+}
+@keyframes rotation {
+  to { transform: rotate(360deg) }
+}
